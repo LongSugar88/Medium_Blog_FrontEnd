@@ -5,8 +5,8 @@ import {RegisterComponent} from './blog/register/register.component';
 import {HomeComponent} from './blog/home/home.component';
 
 export const routes: Routes = [
-  {path:'',redirectTo:'login',pathMatch:'full'},
-  {path: 'home', component: HomeComponent},
+  // {path:'',redirectTo:'login',pathMatch:'full'},
+  {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent}
 ];

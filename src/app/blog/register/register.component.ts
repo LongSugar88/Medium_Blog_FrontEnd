@@ -3,8 +3,8 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {NotificationService} from '../../service/notification.service';
 import {AuthenticationService} from '../../service/authentication.service';
-import {AcocuntService} from '../../service/acocunt.service';
 import {IAccount} from '../../model/iaccount';
+import {AccountService} from '../../service/account.service';
 
 @Component({
   selector: 'app-register',
@@ -17,7 +17,7 @@ export class RegisterComponent implements OnInit {
   confirmPassword = '';
   isRegisterFail = false;
 
-  constructor(private accountService: AcocuntService,
+  constructor(private accountService: AccountService,
               private formBuilder: FormBuilder,
               private router: Router,
               private authenService: AuthenticationService,
